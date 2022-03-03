@@ -7,9 +7,9 @@ function App() {
   const [csvData, setCsvData] = React.useState([{}]);
 
   return (
-    <div>
-      <h1>Importe seu CSV</h1>
-      <div
+    <div className='container'>
+      <h1 className='title'>Importe seu CSV</h1>
+      <div className='dragContainer'
         onDragEnter={() => {
           setHover(true);
         }}
@@ -27,16 +27,30 @@ function App() {
           .filter((file) => file.type === "text/csv")
           .forEach(async (file) => {
             const text = await file.text();
-            console.log(text)
+            // console.log(text)
             const result = parse(text, { header: true });
-            console.log(result)
-            setCsvData((content) => [...content, ...result.data]);
+            // console.log(result)
+            setCsvData([...result.data]);
             // setCsvData(result)
           });
         }}
         >
         Arraste seu CSV aqui!
       </div>
+
+
+
+      <table className='table'>
+        <tbody>
+          <tr contenteditable="true">
+            {csvData.map((csvItem) => (
+              <td contenteditable="true" key={csvItem.id}>
+                <strong>  {csvItem.nome}</strong> {csvItem.telefone}
+              </td>
+            ))}
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

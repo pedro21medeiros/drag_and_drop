@@ -6,14 +6,38 @@
   font-weight: bold;
 }
 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
 .dragContainer {
   background-color: #019973;
   min-height: 10vh;
-  max-width: 30vh;
+  max-width: 40vh;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: 10px;
 }
