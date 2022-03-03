@@ -1,11 +1,11 @@
 # Desafio técnico:
 
-Esse projeto consiste em uma SPA (single page application) feito em Javascript com ReactJS e estilizado em CSS puro.
+Esse projeto consiste em uma SPA (Single Page Application) feito em Javascript com ReactJS e estilizado em CSS puro.
 Trata-se de um conversor de arquivo CSV em uma tabela, que será renderizada imediatamente logo abaixo do campo destinado para arrastar e soltar o arquivo CSV a ser convertido.
 
 ## Funcionalidades:
 
-- Capaz de arrastar e soltar um arquivo CSV;
+- Aceita arrastar e soltar um arquivo CSV;
 - Converte os dados do arquivo CSV em uma table HTML;
 - Renderiza a tabela na tela para o usuário;
 - É possível editar o conteúdo da tabela;
