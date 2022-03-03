@@ -16,8 +16,8 @@ Trata-se de um conversor de arquivo CSV em uma tabela, que será renderizada ime
 Para realizar esse projeto, foi utilizado:
 - Javascript com React;
 - React hooks para manipulação de estado;
-- Framework Papaparse, que realiza a conversão de dados CSV para array ou JSON;
-- Propriedades de elementos HTML para manipular o "drag and drop";
+- Framework Papa parse, que realiza a conversão de dados CSV para array ou JSON;
+- Propriedades de elementos HTML para manipular o "drag and drop" (onDragOver, onDrop);
 - Propriedade `contentEditable` para possibilitar a edição do conteúdo de um elemento HTML;
 - Estilização feita em CSS puro;
 
