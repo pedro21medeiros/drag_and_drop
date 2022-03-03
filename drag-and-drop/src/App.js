@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { parse } from 'papaparse';
+import './App.css'
 
 function App() {
+  const [hover, setHover] = React.useState(false);
+  const [csvData, setCsvData] = React.useState([{}]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <h1>Importe seu CSV</h1>
+      <div
+        onDragEnter={() => {
+          setHover(true);
+        }}
+        onDragLeave={() => {
+          setHover(false);
+        }}
+        onDragOver={(e) => {
+          e.preventDefault();
+        }}
+        onDrop={(e) => {
+          e.preventDefault();
+          setHover(false);
+
+          Array.from(e.dataTransfer.files)
+          .filter((file) => file.type === "text/csv")
+          .forEach(async (file) => {
+            const text = await file.text();
+            console.log(text)
+            const result = parse(text, { header: true });
+            console.log(result)
+            setCsvData((content) => [...content, ...result.data]);
+            // setCsvData(result)
+          });
+        }}
         >
-          Learn React
-        </a>
-      </header>
+        Arraste seu CSV aqui!
+      </div>
     </div>
   );
 }
