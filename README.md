@@ -8,7 +8,7 @@ Trata-se de um conversor de arquivo CSV em uma tabela, que será renderizada ime
 - Aceita arrastar e soltar um arquivo CSV;
 - Converte os dados do arquivo CSV em uma table HTML;
 - Renderiza a tabela na tela para o usuário;
-- É possível editar o conteúdo da tabela;
+- É possível editar o conteúdo de cada item da tabela;
 - Também é possível adicionar itens com um simples clique no campo vazio destinado à adições;
 
 ## Tecnologias:
@@ -22,6 +22,6 @@ Para realizar esse projeto, foi utilizado:
 - Estilização feita em CSS puro;
 
 
-Sinta-se livre para entrar em contato comigo através do meu LinkedIn <a href="https://linkedin.com/in/pedro21medeiros" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pedro21medeiros" height="30" width="40" /></a>.
+Sinta-se livre para entrar em contato comigo através do meu LinkedIn <a href="https://linkedin.com/in/pedro21medeiros" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pedro21medeiros" height="30" width="40" /></a>
 
 Mais informações no meu perfil aqui no GitHub. ;D
