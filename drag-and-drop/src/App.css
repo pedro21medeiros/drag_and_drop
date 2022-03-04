@@ -1,3 +1,7 @@
+body {
+  background-color: azure;
+}
+
 .title {
   max-width: 60vh;
   font-size: 3rem;
@@ -38,7 +42,7 @@
 }
 
 .table {
-  table-layout: fixed;
+  table-layout: auto;
   border-collapse: collapse;
 }
 
